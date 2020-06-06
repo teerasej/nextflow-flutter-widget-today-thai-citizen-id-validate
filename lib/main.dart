@@ -29,8 +29,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  ThaiIdValidator validator =
-      ThaiIdValidator();
+ 
+
+
+
+
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -46,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 key: _formKey,
                 child: Column(children: <Widget>[
                   TextFormField(
-                    validator: validator.validate,
+                    
                   ),
                   RaisedButton(
                     onPressed: () {
